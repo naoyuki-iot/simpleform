@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SimpleFormComponent implements OnInit {
 
+  text1:string = "0";
+  text2:string = "0";
+  result:string ="足し算しましょう";
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addAndShow(): void{
+    this.result = this.text1;
   }
 
 }
